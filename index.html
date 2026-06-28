@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>RustDesk Auto Open</title>
+</head>
+<body>
+
+<script>
+  // اینجا مقادیر خودت رو بذار
+  // YOUR_ID = آی‌دی RustDesk
+  // YOUR_KEY = کلید سرور
+  // YOUR_SERVER_IP = آی‌پی یا دامنه سرور
+  // PORT = پورت رله (مثلاً 21112)
+
+  window.location.href = "rustdesk://YOUR_ID?key=YOUR_KEY&host=YOUR_SERVER_IP&port=PORT";
+
+  // اگر RustDesk نصب نباشه، بعد ۱.۵ ثانیه می‌ره صفحه نصب گوگل‌پلی
+  setTimeout(() => {
+    window.location.href = "https://play.google.com/store/apps/details?id=com.carriez.flutter_hbb";
+  }, 1500);
+</script>
+
+<p>در حال تلاش برای باز کردن RustDesk...</p>
+
+</body>
+</html>
