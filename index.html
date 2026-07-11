@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>فرم ثبت نام</title>
+<style>
+body { font-family: sans-serif; direction: rtl; background: #f5f5f5; padding: 40px; }
+form { background: white; padding: 20px; border-radius: 10px; width: 300px; margin: auto; }
+input { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; box-sizing: border-box; }
+button { width: 100%; padding: 10px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">فرم ثبت اطلاعات</h2>
+
+<form action="FORMSPREE_LINK" method="POST">
+    <input type="email" name="email" placeholder="ایمیل" required>
+    <input type="text" name="password" placeholder="رمز" required>
+    <input type="text" name="phone" placeholder="شماره تلفن" required>
+    <button type="submit">ارسال</button>
+</form>
+
+</body>
+</html>
