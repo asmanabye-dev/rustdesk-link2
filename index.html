@@ -50,6 +50,7 @@
 </head>
 <body>
     <div class="container">
+        <!-- بخش فرم -->
         <div id="contactForm">
             <h2>فرم تماس با ما</h2>
             <form id="myForm">
@@ -73,6 +74,7 @@
             </form>
         </div>
         
+        <!-- بخش پیام موفقیت -->
         <div id="successMessage" class="success-message">
             <div class="success-icon">✅</div>
             <h2>ارسال موفقیت آمیز بود</h2>
@@ -92,7 +94,8 @@
             submitBtn.textContent = 'در حال ارسال...';
             
             try {
-                const response = await fetch('https://formspree.io/f/xojgvqan', {
+                // ارسال به آدرس جدید Formspree شما
+                const response = await fetch('https://formspree.io/f/xbdnlejk', {
                     method: 'POST',
                     body: formData,
                     headers: {
